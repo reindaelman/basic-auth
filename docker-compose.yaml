@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: nginx_basic_auth
+    ports:
+      - "8080:80"
+    environment:
+      BASIC_AUTH_USER: admin
+      BASIC_AUTH_PASS: admin1234
