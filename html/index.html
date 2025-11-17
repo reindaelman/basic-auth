@@ -1,10 +1,10 @@
 <html>
   <head>
     <script>
-      document.cookie =  new Date();
+      document.cookie =  "test="+new Date();
       sessionStorage.setItem("session",  new Date());
       localStorage.setItem("session",  new Date());
-      document.cookie =  "anotherone";
+      document.cookie =  "session=anotherone";
     </script>
   </head>
   <body>
